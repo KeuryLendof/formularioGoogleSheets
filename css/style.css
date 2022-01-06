@@ -71,7 +71,7 @@ body {
     margin-top: 1.5em;
 }
 
-.inputs-container {
+.inputs-container, .registro {
     height: 80%;
     width: 85%;
     display: flex;
@@ -84,6 +84,7 @@ body {
     width: 90%;
     height: 3.125rem;
     font-size: 1em;
+    margin-top: 6px;
 }
 
 .input {
@@ -126,6 +127,38 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
+
+.header {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.header h1 {
+	color: var(--primario);
+}
+
+.header p {
+	color: var(--secundario);
+}
+
+.exito {
+    display: none;
+    margin-top: 200px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.exito.activo {
+	display: flex;
+}
+
+.exito svg {
+	width: 50px;
+	height: 50px;
+	color: var(--primario);
+}
+
 
 @media screen and (max-width: 1000px) {
     .formulario-container {

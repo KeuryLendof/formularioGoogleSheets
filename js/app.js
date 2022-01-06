@@ -1,4 +1,7 @@
 const formulario = document.getElementById('formulario');
+const registro = document.getElementById('registro');
+const exito = document.getElementById('exito');
+
 
 formulario.addEventListener('submit', (e)=>{
     e.preventDefault();
@@ -18,4 +21,7 @@ formulario.addEventListener('submit', (e)=>{
             "Mensaje": formulario.mensaje.value
         })
     });
+
+    registro.style.display = "none"
+    exito.style.display = "flex"
 })

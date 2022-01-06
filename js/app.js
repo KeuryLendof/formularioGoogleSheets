@@ -11,11 +11,11 @@ formulario.addEventListener('submit', (e)=>{
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "Nombre": 'keury alberto',
-            "Apellido": 'lendof diaz',
-            "Telefono": '8497850712',
-            "Correo": 'lendofkeury@gmail.com',
-            "Mensaje": 'Me encanto tu trabajo soy de EEUU y me gustaria contactarte personalmente, saludos.'
+            "Nombre": formulario.nombre.value,
+            "Apellido": formulario.apellido.value,
+            "Telefono": formulario.telefono.value,
+            "Correo": formulario.correo.value,
+            "Mensaje": formulario.mensaje.value
         })
     });
 })

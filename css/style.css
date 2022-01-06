@@ -12,29 +12,34 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    text-align: center;
+    background: wheat;
 }
 
+.modoOscuro{
+    text-align: right;
+    position: relative;
+    top: 10px;
+    margin-right: 35px;
+}
 
 .formulario{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
-    background: wheat;
 }
   
 .formulario-container {
-    height: 33.75em;
+    height: 36.75em;
     width: 60em;
-    margin: 6em auto;
+    margin: 2em auto;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
     transform: translate(0%, -10%);
-
+    border: none;
+    border-radius: 15px;
 }
 
 .formulario-info-container {

@@ -111,7 +111,7 @@ body {
     cursor: pointer;
 }
 .btn:hover{
-    color: black;
+    border: 2px solid black;
 }
 
 .inputs-container p {

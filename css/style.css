@@ -110,6 +110,9 @@ body {
     background-color: var(--button-bg);
     cursor: pointer;
 }
+.btn:hover{
+    color: black;
+}
 
 .inputs-container p {
     margin: 0;

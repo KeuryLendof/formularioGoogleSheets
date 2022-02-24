@@ -190,3 +190,37 @@ body {
         margin: 0;
     }
 }
+
+
+.wrapper{
+    position: relative;
+    display: flex;
+}
+
+.wrapper input{
+    width: 10rem;
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #585858;
+}
+.validation{
+    position: absolute;
+    top: 0.55rem;
+    right: 0.7rem;
+    opacity: 0;
+    color: #fd4444;
+}
+@keyframes shake{
+    0%, 100%{transform: translateX(0);}
+    25%{transform: translateX(8px);}
+    75%{transform: translateX(-8px);}
+}
+
+input:valid{border-color: #55d688;}
+input:invalid{border-color: #fd4444;}
+input:invalid~.validation{opacity: 1;}
+input:invalid, input:invalid~.validation{
+    animation: shake 0.1635s 0s 3;
+}
+
